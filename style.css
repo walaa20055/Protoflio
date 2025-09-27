@@ -60,6 +60,7 @@ body {
 ========================== */
 .hero {
   position: relative;
+  padding-top: 120px;
   background: linear-gradient(180deg, #2e2017 0%, #6f4f37 100%);
   color: #fff;
   height: 100vh;
@@ -174,6 +175,7 @@ body {
    Skills Section
 ========================== */
 .skills {
+  margin-top: 50px;
   padding-bottom: 40px;
 }
 
@@ -238,10 +240,9 @@ body {
   flex-direction: column;
 }
 
-/* ✨ الصورة بقت أطول */
 .project-card img {
   width: 100%;
-  height: 260px;     /* زودنا الارتفاع من 180px → 260px */
+  height: 260px;     
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 15px;
