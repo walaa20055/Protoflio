@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Walaa Saeed</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container d-flex align-items-center justify-content-between">
+    <div class="logo">WALAA SAEED</div>
+    <nav class="navmenu">
+      <ul class="d-flex gap-3 mb-0">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section id="hero" class="hero">
+  <canvas id="stars"></canvas>
+  <div class="container hero-content">
+    <div class="row align-items-center gy-4">
+      <div class="col-lg-6 text-lg-start text-center hero-left">
+        <h1 class="name-heading">
+          <span id="typed"></span><span id="cursor">|</span>
+        </h1>
+        <p class="subtitle"><span id="typed-sub"></span><span id="cursor-sub">|</span></p>
+        <div class="about-me mt-4">
+          <h4>About Me</h4>
+          <p class="about-text">
+            I’m a 20-year-old IT student and a passionate Front-End Developer.
+             I enjoy building clean, responsive, and user-friendly web interfaces. Skilled in JavaScript, 
+             TypeScript, React, CSS, Sass, and Bootstrap, I’m continuously improving my skills and working
+              on projects that combine creativity with performance. My goal is to grow as a developer and contribute to
+               impactful, modern web applications.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end">
+        <div class="profile-circle">
+          <img src="images/personal_photo.jpg" alt="Walaa Saeed" id="profile-img">
+          <div class="profile-ring"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section skills">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="row g-4 mt-3">
+      <div class="col-md-3 col-sm-6">
+        <div class="skill-card">
+          <i class="fab fa-html5" style="color:#E34F26"></i>
+          <h3>HTML5</h3>
+          <p>Semantic markup & accessibility basics.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="skill-card">
+          <i class="fab fa-css3-alt" style="color:#1572B6"></i>
+          <h3>CSS3</h3>
+          <p>Responsive layouts, Flexbox & Grid.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="skill-card">
+          <i class="fab fa-bootstrap" style="color:#7952B3"></i>
+          <h3>Bootstrap</h3>
+          <p>Rapid responsive design using utility classes.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="skill-card">
+          <i class="fab fa-js" style="color:#F7DF1E"></i>
+          <h3>JavaScript</h3>
+          <p>ES6+, DOM manipulation, async patterns.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="skill-card">
+          <i class="fab fa-sass" style="color:#CC6699"></i>
+          <h3>SASS</h3>
+          <p>Variables, nesting, mixins for clean CSS.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="skill-card">
+          <i class="fab fa-java" style="color:#007396"></i>
+          <h3>Java</h3>
+          <p>OOP & core programming concepts.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="skill-card">
+          <i class="fas fa-project-diagram" style="color:#FF6F61"></i>
+          <h3>OOP</h3>
+          <p>Design patterns & object-oriented principles.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="skill-card">
+          <i class="fas fa-database" style="color:#4479A1"></i>
+          <h3>DS</h3>
+          <p>Arrays, trees, graphs, algorithms.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="skill-card">
+          <i class="fab fa-react" style="color:#61DAFB"></i>
+          <h3>React</h3>
+          <p>Hooks, components, state management.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="skill-card">
+          <i class="fas fa-code" style="color:#3178C6"></i>
+          <h3>TypeScript</h3>
+          <p>Types & interfaces for safer code.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="skill-card">
+          <i class="fab fa-git-alt" style="color:#F05032"></i>
+          <h3>Git</h3>
+          <p>Version control & collaboration.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="skill-card">
+          <i class="fab fa-github" style="color:#181717"></i>
+          <h3>GitHub</h3>
+          <p>Repo hosting & CI/CD integration.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- Projects -->
+ <section id="projects" class="section projects">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="projects-wrapper">
+      <button class="project-arrow left"><i class="fas fa-chevron-left"></i></button>
+      <div class="projects-container">
+
+        <div class="project-card">
+          <a href="https://walaa20055.github.io/PureVera/">
+            <img src="images/shower-gel.jpeg" alt="Project 1">
+          </a>
+          <h3>Pure Vera Website</h3>
+          <p>A modern e-commerce website specialized in skincare.</p>
+          <p>Showcasing and selling natural skin care products.</p>
+          <p>using HTML5, CSS3, JavaScript.</p>
+        </div>
+
+        <div class="project-card">
+          <a href="Event/html/contact.html">
+            <img src="images/contact.png" alt="Project 2">
+          </a>
+          <h3>Contact PAGE</h3>
+          <p>A simple and intuitive contact page for easy communication.</p>
+          <p>Allows users to reach out via email, phone, or social media.</p>
+          <p>using HTML5, CSS3, JavaScript, Bootstrap.</p>
+        </div>
+
+        <div class="project-card">
+          <a href=" https://walaa20055.github.io/Calculator/">
+            <img src="images/Calculator.jpeg" alt="Project 3">
+          </a>
+          <h3>Calculator</h3>
+          <p>A clean and interactive calculator that offers quick, accurate calculations with a user-friendly experience for everyday math tasks.</p>
+          <p>using HTML5, CSS3, JavaScript, Tailwind.</p>
+
+        </div>
+
+        <div class="project-card">
+          <a href="Tasks/HTML-Layout.html">
+            <img src="images/page.png" alt="Project 4">
+          </a>
+          <h3>Personal Portfolio Page</h3>
+          <p>A responsive personal website showcasing my web development skills.</p>
+          <p>Built with HTML5 and styled with CSS for a modern, user-friendly layout.</p>
+
+
+        </div>
+
+        <div class="project-card">
+          <a href="https://walaa20055.github.io/TO-DO-LIST/">
+            <img src="images/To-Do.png" alt="Project 5">
+          </a>
+          <h3>To-Do List </h3>
+          <p>Interactive to-do list for scheduling tasks with date, time, and countdown tracking.</p>
+          <p>Built with HTML, CSS, and JavaScript using responsive, professional card-style design.</p>
+
+        </div>
+
+        <div class="project-card">
+          <a href="Tasks/index.html">
+            <img src="images/UI-UX.png" alt="Project 6">
+          </a>
+          <h3>Photo Gallery & UI Elements</h3>
+          <p>Interactive web page with a photo gallery and animated UI components.</p>
+          <p>Built with HTML, CSS, and JavaScript for responsive and dynamic user experience.</p>          
+
+        </div>
+
+      </div>
+      <button class="project-arrow right"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="row g-5 align-items-start">
+      <div class="col-lg-6 contact-info">
+        <h2>Let’s Make Something new, different great together. <span class="highlight">just say hello</span></h2>
+        <ul class="contact-list">
+          <li><i class="fas fa-phone contact-icon"></i> <span>+20 112 662 0019</span></li>
+          <li><i class="fas fa-map-marker-alt contact-icon"></i> <span>Fayoum, Egypt</span></li>
+          <li><i class="fas fa-envelope contact-icon"></i> <span>walaasaeed305@gmail.com</span></li>
+        </ul>
+        <div class="social-icons">
+          <a href="https://x.com/i/flow/login" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/walaa-saeed-79a734290/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/walaa20055" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.facebook.com/walaasaeed.2005" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <form class="contact-form">
+          <div class="mb-3"><input type="text" name="name" placeholder="Your Name" required></div>
+          <div class="mb-3"><input type="email" name="email" placeholder="Email Address" required></div>
+          <div class="mb-3"><textarea name="message" rows="5" placeholder="Message" required></textarea></div>
+          <button type="submit" class="btn-send">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer text-center py-4">
+  <p>© 2025 Walaa Saeed. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

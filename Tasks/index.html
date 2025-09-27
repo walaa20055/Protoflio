@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Day01</title>
+</head>
+<body>
+    
+  <div class="vertical-name">Walaa Saeed</div>
+  <br> <br>
+  <div class="gallery">
+    <img src="photo.jpg" alt="Photo 1">
+    <img src="photo.jpg" alt="Photo 2">
+    <img src="photo.jpg" alt="Photo 3">
+    <img src="photo.jpg" alt="Photo 4">
+    </div>
+    <div class="chip">
+        <img src="https://cdn-icons-png.flaticon.com/512/6997/6997662.png" alt="avatar" id="avatar">
+            <span class="chip-text" id="chipText">Walaa Saeed</span>
+            <span class="close-btn" id="closeBtn">&times;</span>
+          </div>
+    <p class="multi-columns">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula, nunc sit amet malesuada eleifend, nisi felis facilisis lectus, nec placerat odio orci nec purus. Aenean tincidunt elit non orci vulputate, nec egestas eros suscipit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer non felis eu sem tincidunt tincidunt. Nullam porttitor magna id velit vulputate, sed ultrices neque euismod. Duis blandit erat vel diam laoreet, non porta eros elementum. Donec luctus magna et nulla interdum, nec pretium felis mattis. Mauris gravida, turpis a sagittis ultricies, orci lectus vulputate orci, eget feugiat massa lectus ut nulla. Praesent a suscipit lorem.
+      </p>
+
+      <div class="road">
+        <img src="car.jpg" class="car" alt="car">
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#" class="active"><i class="fa fa-home"></i></a></li>
+          <li><a href="#"><i class="fa fa-search"></i></a></li>
+          <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+          <li><a href="#"><i class="fa fa-globe"></i></a></li>
+          <li><a href="#"><i class="fa fa-trash"></i></a></li>
+        </ul>
+      </nav>
+      <script>
+        const closeBtn = document.getElementById("closeBtn");
+const avatar = document.getElementById("avatar");
+const chipText = document.getElementById("chipText");
+
+closeBtn.addEventListener("click", () => {
+  chipText.classList.add("hidden");
+});
+
+avatar.addEventListener("click", () => {
+  chipText.classList.remove("hidden");
+});
+
+      </script>
+</body>
+</html>

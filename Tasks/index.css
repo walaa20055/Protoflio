@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: rgb(240, 240, 240);
+  }
+  
+  .vertical-name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background: rgb(102, 64, 146);
+    padding: 10px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    height: auto;
+    width: auto;
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 20px;
+    height: calc(100vh - 150px);
+    margin-top: 150px;
+  }
+  
+  .gallery img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+  }
+  
+  .gallery img:hover {
+    transform: scale(0.9);
+  }
+  .multi-columns {
+    margin: 40px 20px;
+    column-count: 3;
+    column-gap: 30px;
+    column-rule: 2px solid rgb(102, 64, 146);
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgb(50, 50, 50);
+  }  
+  .road {
+    margin: 50px auto;
+    width: 100%;
+    height: 150px;
+    position: relative;
+    background: rgb(253, 252, 252);
+    overflow: hidden;
+  }
+  
+  .car {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 120px;
+    animation: moveCar 5s linear infinite;
+  }
+  
+  @keyframes moveCar {
+    from {
+      left: 0;
+    }
+    to {
+      left: 100%;
+    }
+  }
+  .navbar {
+    background: rgb(70, 70, 70);
+    border-radius: 8px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .navbar li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  .navbar a {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    background: rgb(0, 200, 100);
+    color: rgb(0, 0, 0);
+  }
+  .navbar {
+    background: rgb(138, 206, 174);
+    border-radius: 8px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .navbar li {
+    display: inline-block;
+    margin: 0;
+  }
+  
+  .navbar a {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    text-decoration: none;
+    padding: 12px 20px;
+    transition: all 0.3s ease;
+    display: block;
+  }
+  
+  .navbar a:hover {
+    background: rgb(0, 200, 100);
+    color: rgb(52, 65, 73);
+  }
+  
+  .navbar a.active {
+    background: rgb(0, 200, 100);
+    color: rgb(0, 0, 0);
+  }
+  
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    border-radius: 25px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    overflow: hidden;
+  }
+  
+  .chip img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .chip-text {
+    margin: 0 10px;
+    white-space: nowrap;
+    transition: all 0.5s ease;
+  }
+  
+  .close-btn {
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .close-btn:hover {
+    color: red;
+  }
+  
+  .chip-text.hidden {
+    margin: 0;
+    opacity: 0;
+    width: 0;
+  }
+  
