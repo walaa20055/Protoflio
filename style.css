@@ -443,3 +443,12 @@ body {
     right: -10px;
   }
 }
+#hero {
+  margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+  #hero {
+    margin-top: 100px;
+  }
+}
