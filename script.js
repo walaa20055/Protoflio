@@ -122,7 +122,6 @@ const rightArrow = document.querySelector(".project-arrow.right");
 
 let position = 0;
 
-// ✅ دالة للحصول على عرض الكارد مع gap الحقيقي
 function getCardWidth() {
   const card = projectsContainer.querySelector(".project-card");
   const containerStyle = window.getComputedStyle(projectsContainer);
@@ -130,17 +129,14 @@ function getCardWidth() {
   return card.offsetWidth + gap;
 }
 
-// ✅ عدد الكروت المرئية
 function getVisibleCards() {
   return window.innerWidth < 992 ? 1 : 2;
 }
 
-// ✅ تحديث موقع الـcarousel
 function updatePosition() {
   projectsContainer.style.transform = `translateX(${position}px)`;
 }
 
-// زرار اليسار
 leftArrow.addEventListener("click", () => {
   const cardWidth = getCardWidth();
   const visibleCards = getVisibleCards();
@@ -148,7 +144,6 @@ leftArrow.addEventListener("click", () => {
   updatePosition();
 });
 
-// زرار اليمين
 rightArrow.addEventListener("click", () => {
   const cardWidth = getCardWidth();
   const visibleCards = getVisibleCards();
@@ -158,7 +153,6 @@ rightArrow.addEventListener("click", () => {
   updatePosition();
 });
 
-// تحديث عند تغيير حجم الشاشة
 window.addEventListener("resize", () => {
   position = 0;
   updatePosition();
